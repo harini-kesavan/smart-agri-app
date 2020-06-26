@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/cat"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Activities.login_options">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_blue"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Choose A Category"
+
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/farmining_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            app:srcCompat="@drawable/orchids" />
+
+        <TextView
+            android:id="@+id/text_shop_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Farm"
+            android:textAlignment="gravity"
+            android:textColor="@color/dark_grey"
+            android:textSize="16dp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gardening_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/leaf" />
+
+        <TextView
+            android:id="@+id/text_shop_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Garden"
+            android:textAlignment="gravity"
+            android:textColor="@color/dark_grey"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

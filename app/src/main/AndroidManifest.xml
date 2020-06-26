@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.edu.ssn.insta">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/leaf"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.web"
+            android:theme="@style/AppTheme.mypop">
+
+        </activity>
+        <activity android:name=".Activities.Events" />
+        <activity android:name=".Activities.language" />
+        <activity android:name=".Activities.Plants" />
+        <activity android:name=".Activities.Extensive_farming" />
+        <activity android:name=".Activities.Extensive_farming_tamil" />
+        <activity android:name=".Activities.login_options" />
+        <activity android:name=".Activities.map" />
+        <activity android:name=".Activities.shop">
+
+        </activity>
+        <activity
+            android:name=".Activities.home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.login_activity" />
+        <activity android:name=".Activities.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.commentsubmit" />
+        <activity android:name=".Activities.event_desc_activity" />
+        <activity android:name=".Activities.view_comments" />
+        <activity android:name=".Activities.upload" />
+        <activity android:name=".Activities.insta_home" />
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
